@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        #colorBox {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        button {
+            padding: 20px;
+            margin: 400px;
+            margin-top: 50px;
+            width: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorBox"></div>
+    <button id="changeColorBtn">Change Color</button>
+
+    <script>
+        const colorBox = document.getElementById("colorBox");
+        let changeColorBtn = document.getElementById("changeColorBtn");
+
+        changeColorBtn.addEventListener('click', changeColor);
+
+        function changeColor() {
+            if (colorBox.style.backgroundColor === "green") {
+                colorBox.style.backgroundColor = "blue";
+            } else {
+                colorBox.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</bod
+</html>
